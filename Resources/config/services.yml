@@ -1,0 +1,7 @@
+services:
+#    glevolod_versioning.example:
+#        class: Glevolod\VersioningBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+
+  glevolod_versioning.service:
+    class: Glevolod\VersioningBundle\Service\VersionService

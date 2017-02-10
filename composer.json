@@ -1,0 +1,27 @@
+{
+  "name": "glevolod/versioning-bundle",
+  "description": "Bundle for control version of your application",
+  "type": "symfony-bundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vladimir Glechikov"
+    }
+  ],
+  "keywords": [
+    "git",
+    "symfony",
+    "versioning"
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Glevolod\\VersioningBundle\\": ""
+    }
+  },
+  "repositories": [
+    {
+    }
+  ]
+}
