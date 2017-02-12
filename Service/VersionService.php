@@ -2,6 +2,7 @@
 
 namespace Glevolod\VersioningBundle\Service;
 
+//TODO: check $returnVar && $output in common private exec method
 class VersionService
 {
     /**
@@ -9,14 +10,13 @@ class VersionService
      */
     public function getBranch()
     {
-        //TODO: check $returnVar && $output in common private exec method
         $result = exec('cd .. && git branch', $output, $returnVar);
         return substr($result, 2);
     }
 
     public function getTag()
     {
-        $result = exec('git describe --abbrev=0', $output, $returnVar);
+        $result = exec('git describe --tags', $output, $returnVar);
         return $result;
     }
 
